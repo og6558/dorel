@@ -1,5 +1,5 @@
 public class Bicycle extends Light{
-    private boolean salsala;
+    protected boolean salsala;
 
     @Override
     public String toString() {

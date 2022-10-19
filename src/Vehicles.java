@@ -1,4 +1,4 @@
-public class Vehicles {
+public abstract class Vehicles {
     public Vehicles(int numcar, double carage, int wheels, String controltype, double gasamin) {
         this.numcar = numcar;
         this.carage = carage;
@@ -58,10 +58,14 @@ public class Vehicles {
                 '}';
     }
 
-    private int numcar;
-    private double carage;
-    private int wheels;
-    private String controltype;
-    private double gasamin;
+    protected int numcar;
+    protected double carage;
+    protected int wheels;
+    protected String controltype;
+    protected double gasamin;
+
+    public double exhaust(){
+        return this.gasamin*60;
+    }
 
 }

@@ -1,5 +1,5 @@
 public class Minkilo extends Truck{
-    private double minkilos;
+    protected double minkilos;
 
     @Override
     public String toString() {

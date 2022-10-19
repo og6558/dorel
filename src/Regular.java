@@ -1,5 +1,5 @@
-public class Regular extends Vehicles{
-    private int passangers;
+public abstract class Regular extends Vehicles{
+    protected int passangers;
 
     @Override
     public String toString() {
@@ -19,5 +19,16 @@ public class Regular extends Vehicles{
     public Regular(int numcar, double carage, int wheels, String controltype, double gasamin, int passangers) {
         super(numcar, carage, wheels, controltype, gasamin);
         this.passangers = passangers;
+    }
+
+    @Override
+    public double exhaust() {
+        return super.exhaust()*this.passangers;
+    }
+    public void noise(){
+        System.out.println("ioioioioioioio");
+    }
+    public int hitchhikers(){
+        return passangers+5;
     }
 }

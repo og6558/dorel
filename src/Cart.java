@@ -1,5 +1,5 @@
 public class Cart extends Light{
-    private double timeofcharge;
+    protected double timeofcharge;
 
     @Override
     public String toString() {
@@ -19,5 +19,13 @@ public class Cart extends Light{
     public Cart(int numcar, double carage, int wheels, String controltype, double gasamin, boolean engine, double timeofcharge) {
         super(numcar, carage, wheels, controltype, gasamin, engine);
         this.timeofcharge = timeofcharge;
+    }
+
+    @Override
+    public double exhaust() {
+        return super.exhaust() + timeofcharge;
+    }
+    public double hitchhikers(){
+        return 5.0 * timeofcharge;
     }
 }

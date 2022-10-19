@@ -1,5 +1,5 @@
-public class Truck extends Heavy{
-    private double kilo;
+public abstract class Truck extends Heavy{
+    protected double kilo;
 
     @Override
     public String toString() {
@@ -19,5 +19,10 @@ public class Truck extends Heavy{
     public Truck(int numcar, double carage, int wheels, String controltype, double gasamin, int nigrarim, double kilo) {
         super(numcar, carage, wheels, controltype, gasamin, nigrarim);
         this.kilo = kilo;
+    }
+
+    @Override
+    public double exhaust() {
+        return super.exhaust()*1.5;
     }
 }

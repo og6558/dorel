@@ -1,5 +1,5 @@
-public class Light extends Vehicles{
-    private boolean engine;
+public abstract class Light extends Vehicles{
+    protected boolean engine;
 
     @Override
     public String toString() {

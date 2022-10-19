@@ -1,5 +1,5 @@
 public class Kids extends Regular{
-    private int children;
+    protected int children;
 
     @Override
     public String toString() {

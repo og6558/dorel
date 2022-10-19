@@ -1,5 +1,5 @@
 public class Tractor extends Heavy{
-    private String whatnigrar;
+    protected String whatnigrar;
 
     @Override
     public String toString() {
